@@ -37,11 +37,11 @@ export function Footer() {
   }, [locale]);
 
   return (
-    <footer id="contact" className="relative py-24 border-t border-white/[0.05]">
+    <footer id="contact" className="relative py-16 md:py-24 border-t border-white/[0.05]">
       <Container size="xl">
         {/* Contact CTA Section */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -110,44 +110,44 @@ export function Footer() {
           </div>
         </motion.div>
 
-        {/* Info Bar */}
+        {/* Info Bar - compact on mobile */}
         <motion.div
-          className="flex flex-col items-center gap-2 mb-12 text-center"
+          className="flex flex-col items-center gap-1 mb-8 md:mb-12 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="text-zinc-500 text-sm">
+          <p className="text-zinc-500 text-xs md:text-sm">
             {currentDate} - {currentTime}
           </p>
-          <p className="text-zinc-600 text-sm">
+          <p className="text-zinc-600 text-xs md:text-sm">
             {t("location")}
           </p>
         </motion.div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-white/[0.05] mb-10" />
+        <div className="w-full h-px bg-white/[0.05] mb-6 md:mb-10" />
 
-        {/* Footer Bottom */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Left: Name/Brand */}
+        {/* Footer Bottom - stacked compact on mobile */}
+        <div className="flex flex-col items-center gap-4 md:gap-8 md:flex-row md:justify-between">
+          {/* Name/Brand */}
           <div className="text-center md:text-left">
-            <p className="text-white font-medium mb-1">Sinan Yurttadur</p>
-            <p className="text-zinc-500 text-sm">Innovation & Transformation</p>
+            <p className="text-white font-medium text-sm md:text-base">Sinan Yurttadur</p>
+            <p className="text-zinc-500 text-xs md:text-sm">Innovation & Transformation</p>
           </div>
 
-          {/* Center: Social Links */}
+          {/* Social Links + Legal - combined row on mobile */}
           <div className="flex items-center gap-4">
             <motion.a
               href="https://www.linkedin.com/in/sinan-yurttadur-2ba246269/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.08] transition-all"
+              className="w-9 h-9 md:w-11 md:h-11 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.08] transition-all"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </motion.a>
@@ -155,32 +155,22 @@ export function Footer() {
               href="https://www.youtube.com/@sinanyurttadur"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.08] transition-all"
+              className="w-9 h-9 md:w-11 md:h-11 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.08] transition-all"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
             </motion.a>
-          </div>
-
-          {/* Right: Legal Links */}
-          <div className="flex items-center gap-6 text-sm">
+            <span className="w-px h-6 bg-white/10 mx-1 hidden md:block" />
             <Link
               href={`/${locale}/legal`}
-              className="text-zinc-500 hover:text-white transition-colors"
+              className="text-zinc-500 hover:text-white transition-colors text-xs md:text-sm"
             >
               {t("impressum")} & {t("datenschutz")}
             </Link>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center mt-10">
-          <p className="text-zinc-600 text-sm">
-            {t("createdBy")} Sinan Yurttadur - {t("founder")} <a href="https://theneed.works" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400 transition-colors">theneed.works</a>
-          </p>
         </div>
       </Container>
     </footer>

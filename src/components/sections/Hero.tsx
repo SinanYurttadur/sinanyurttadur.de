@@ -81,7 +81,7 @@ export function Hero() {
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 {t("tagline")}
               </span>
-              <span className="px-3 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-medium">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-sm font-medium">
                 Verfügbar für Keynotes
               </span>
             </motion.div>

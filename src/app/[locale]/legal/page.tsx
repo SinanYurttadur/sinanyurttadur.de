@@ -20,7 +20,7 @@ export default function LegalPage() {
         </Link>
       </div>
 
-      <Container size="md" className="py-24">
+      <Container size="md" className="pt-20 pb-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

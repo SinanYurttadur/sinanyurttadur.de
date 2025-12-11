@@ -172,6 +172,9 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Spacer for bottom dock navbar */}
+        <div className="h-20 md:h-24" />
       </Container>
     </footer>
   );

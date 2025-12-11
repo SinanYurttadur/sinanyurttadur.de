@@ -93,17 +93,19 @@ export function Speaking() {
                 </svg>
                 Videocall buchen
               </motion.a>
-              <motion.a
-                href="mailto:hi@sinanyurttadur.de?subject=Keynote%20%2F%20Workshop%20Anfrage"
+              <motion.button
+                onClick={() => {
+                  navigator.clipboard.writeText("hi@sinanyurttadur.de");
+                }}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-zinc-300 font-medium text-sm hover:bg-white/[0.08] hover:text-white transition-all group"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
+                <span className="font-mono text-zinc-400 group-hover:text-zinc-200 transition-colors">hi@sinanyurttadur.de</span>
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9.75a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
                 </svg>
-                Per E-Mail
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
           {/* Topic Cards Grid */}

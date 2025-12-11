@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Sinan Yurttadur | Innovation & Transformation Experte",
+    "description": "Speaker, Unternehmer und Berater für Innovation, Digitalisierung & KI. Ich begleite Unternehmen durch die digitale Transformation."
+  },
+  "nav": {
+    "home": "Home",
+    "speaking": "Speaking",
+    "ventures": "Ventures",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "bookSinan": "Sinan buchen"
+  },
+  "hero": {
+    "tagline": "Innovation & Transformation",
+    "headlinePart1": "Die Zukunft",
+    "headlineHighlight": "gestalten",
+    "headlinePart2": "– nicht abwarten",
+    "subheadline": "Speaker, Unternehmer und Berater. Ich helfe Unternehmen, Innovation und KI strategisch einzusetzen, um die Transformation erfolgreich zu meistern.",
+    "cta": "Jetzt Gespräch buchen",
+    "roles": {
+      "speaker": "Keynote Speaker",
+      "entrepreneur": "Unternehmer",
+      "advisor": "Transformation Advisor"
+    }
+  },
+  "speaking": {
+    "title": "Speaking",
+    "subtitle": "Keynotes zu Innovation, KI und digitaler Transformation",
+    "topics": {
+      "innovation": {
+        "title": "Innovation by Design",
+        "description": "Wie man Produkte baut, die Menschen wirklich nutzen."
+      },
+      "ai": {
+        "title": "Applied AI",
+        "description": "Vom Hype zum echten Nutzen – Learnings aus routeX und hubli."
+      },
+      "transformation": {
+        "title": "Digitale Transformation",
+        "description": "Die Schnittstelle von UX und Business-Logik."
+      }
+    }
+  },
+  "ventures": {
+    "title": "Das Ökosystem",
+    "subtitle": "Unternehmen und Produkte, die ich aufbaue",
+    "tier1": {
+      "theneed": {
+        "tagline": "Innovationsagentur",
+        "description": "Strategie & Wachstum"
+      },
+      "uxcircle": {
+        "tagline": "Software / Designhouse",
+        "description": "Umsetzung & Handwerk"
+      }
+    },
+    "tier2": {
+      "hubli": {
+        "tagline": "Real Estate Marketing Automation"
+      },
+      "commissio": {
+        "tagline": "Commission Management Software"
+      },
+      "routex": {
+        "tagline": "KI-Routenmanagement",
+        "badge": "Beta"
+      }
+    }
+  },
+  "proof": {
+    "title": "Bewährt",
+    "testimonials": "5.0 von 30 Bewertungen",
+    "trustedBy": "Vertrauen von"
+  },
+  "youtube": {
+    "title": "Einblicke in",
+    "titleHighlight": "Aktion",
+    "subtitle": "Keynotes, Interviews und Gedanken zu Innovation & Transformation",
+    "viewAll": "Alle Videos ansehen"
+  },
+  "footer": {
+    "cta": "Bereit zu innovieren?",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "viewAll": "Alle ansehen"
+  }
+}

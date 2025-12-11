@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Sinan Yurttadur | Innovation & Transformation Expert",
+    "description": "Speaker, Entrepreneur and Advisor for Innovation, Digitalization & AI. I guide companies through digital transformation."
+  },
+  "nav": {
+    "home": "Home",
+    "speaking": "Speaking",
+    "ventures": "Ventures",
+    "about": "About",
+    "contact": "Contact",
+    "bookSinan": "Book Sinan"
+  },
+  "hero": {
+    "tagline": "Innovation & Transformation",
+    "headlinePart1": "Shape the",
+    "headlineHighlight": "future",
+    "headlinePart2": "– don't wait for it",
+    "subheadline": "Speaker, Entrepreneur and Advisor. I help companies leverage innovation and AI strategically to master their transformation journey.",
+    "cta": "Book a conversation",
+    "roles": {
+      "speaker": "Keynote Speaker",
+      "entrepreneur": "Entrepreneur",
+      "advisor": "Transformation Advisor"
+    }
+  },
+  "speaking": {
+    "title": "Speaking",
+    "subtitle": "Keynotes on Innovation, AI, and Digital Transformation",
+    "topics": {
+      "innovation": {
+        "title": "Innovation by Design",
+        "description": "How to build products people actually use."
+      },
+      "ai": {
+        "title": "Applied AI",
+        "description": "Beyond the hype—lessons learned from building routeX and hubli."
+      },
+      "transformation": {
+        "title": "Digital Transformation",
+        "description": "The intersection of UX and Business Logic."
+      }
+    }
+  },
+  "ventures": {
+    "title": "The Ecosystem",
+    "subtitle": "Companies and products I'm building",
+    "tier1": {
+      "theneed": {
+        "tagline": "Innovation Agency",
+        "description": "Strategy & Growth"
+      },
+      "uxcircle": {
+        "tagline": "Software / Designhouse",
+        "description": "Execution & Craft"
+      }
+    },
+    "tier2": {
+      "hubli": {
+        "tagline": "Real Estate Marketing Automation"
+      },
+      "commissio": {
+        "tagline": "Commission Management Software"
+      },
+      "routex": {
+        "tagline": "AI Route Management",
+        "badge": "Beta"
+      }
+    }
+  },
+  "proof": {
+    "title": "Proven",
+    "testimonials": "5.0 from 30 reviews",
+    "trustedBy": "Trusted by"
+  },
+  "youtube": {
+    "title": "Insights in",
+    "titleHighlight": "Action",
+    "subtitle": "Keynotes, interviews and thoughts on Innovation & Transformation",
+    "viewAll": "View all videos"
+  },
+  "footer": {
+    "cta": "Ready to innovate?",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all"
+  }
+}

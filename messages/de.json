@@ -9,15 +9,15 @@
     "ventures": "Ventures",
     "about": "Über mich",
     "contact": "Kontakt",
-    "bookSinan": "Sinan buchen"
+    "bookSinan": "Mit Sinan sprechen"
   },
   "hero": {
     "tagline": "Innovation & Transformation",
     "headlinePart1": "Die Zukunft",
     "headlineHighlight": "gestalten",
-    "headlinePart2": "– nicht abwarten",
+    "headlinePart2": "statt abwarten.",
     "subheadline": "Speaker, Unternehmer und Berater. Ich helfe Unternehmen, Innovation und KI strategisch einzusetzen, um die Transformation erfolgreich zu meistern.",
-    "cta": "Jetzt Gespräch buchen",
+    "cta": "Gespräch buchen",
     "roles": {
       "speaker": "Keynote Speaker",
       "entrepreneur": "Unternehmer",
@@ -26,46 +26,40 @@
   },
   "speaking": {
     "title": "Speaking",
-    "subtitle": "Keynotes zu Innovation, KI und digitaler Transformation",
+    "subtitle": "Provokante Impulse für Teams, die bereit sind, anders zu denken",
     "topics": {
-      "innovation": {
-        "title": "Innovation by Design",
-        "description": "Wie man Produkte baut, die Menschen wirklich nutzen."
+      "mindset": {
+        "title": "Der Innovations-Mindset",
+        "description": "Warum 90% der Innovation in Unternehmen scheitert – und wie Sie zu den 10% gehören. Über die psychologischen Barrieren, die uns davon abhalten, wirklich Neues zu schaffen.",
+        "takeaway": "\"Innovation ist keine Methode. Es ist eine Entscheidung.\""
       },
-      "ai": {
-        "title": "Applied AI",
-        "description": "Vom Hype zum echten Nutzen – Learnings aus routeX und hubli."
+      "aiworkshop": {
+        "title": "KI ohne Bullshit",
+        "description": "Hands-on Workshop: Was KI heute wirklich kann, wo sie versagt, und wie Sie sie praktisch einsetzen. Gemeinsam entwickeln wir Use Cases für Ihr Unternehmen.",
+        "takeaway": "\"Die Frage ist nicht ob KI, sondern welches Problem Sie damit lösen.\""
       },
       "transformation": {
-        "title": "Digitale Transformation",
-        "description": "Die Schnittstelle von UX und Business-Logik."
+        "title": "Transformation ist Kulturarbeit",
+        "description": "Tools ändern nichts. Menschen ändern alles. Warum die meisten Transformationsprojekte an der Kultur scheitern – und wie Sie die unsichtbaren Widerstände überwinden.",
+        "takeaway": "\"Digitalisierung beginnt im Kopf, nicht im Tool.\""
+      },
+      "aifinale": {
+        "title": "KI: Das Finale",
+        "description": "Wie KI, Robotik und Quantencomputing die Zukunft verändern werden – schneller als wir denken. Ein Blick auf die Konvergenz der Technologien und was das für uns alle bedeutet.",
+        "takeaway": "\"Die nächsten 10 Jahre werden alles verändern, was wir über Arbeit wissen.\""
       }
     }
   },
   "ventures": {
     "title": "Das Ökosystem",
-    "subtitle": "Unternehmen und Produkte, die ich aufbaue",
-    "tier1": {
-      "theneed": {
-        "tagline": "Innovationsagentur",
-        "description": "Strategie & Wachstum"
-      },
-      "uxcircle": {
-        "tagline": "Software / Designhouse",
-        "description": "Umsetzung & Handwerk"
-      }
+    "subtitle": "Zwei Unternehmen, eine Vision: Innovation greifbar machen.",
+    "theneed": {
+      "tagline": "Innovationsagentur",
+      "description": "Wir helfen Unternehmen, ihre Innovationsstrategie zu entwickeln und erfolgreich umzusetzen."
     },
-    "tier2": {
-      "hubli": {
-        "tagline": "Real Estate Marketing Automation"
-      },
-      "commissio": {
-        "tagline": "Commission Management Software"
-      },
-      "routex": {
-        "tagline": "KI-Routenmanagement",
-        "badge": "Beta"
-      }
+    "uxcircle": {
+      "tagline": "Software & Designhouse",
+      "description": "Wir entwickeln digitale Produkte, die Menschen lieben und Unternehmen voranbringen."
     }
   },
   "proof": {
@@ -80,12 +74,32 @@
     "viewAll": "Alle Videos ansehen"
   },
   "footer": {
-    "cta": "Bereit zu innovieren?",
+    "available": "Offen für neue Projekte",
+    "cta": "Lass uns sprechen",
+    "ctaSubtitle": "Ob Keynote, Workshop oder Beratung - ich freue mich auf den Austausch.",
+    "bookCall": "Videocall buchen",
+    "sendEmail": "E-Mail schreiben",
+    "location": "Stuttgart, Germany - Remote first",
+    "createdBy": "Created by",
+    "founder": "FOUNDER of",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },
   "common": {
     "learnMore": "Mehr erfahren",
     "viewAll": "Alle ansehen"
+  },
+  "about": {
+    "badge": "Über mich",
+    "title": "Hey, ich bin",
+    "name": "Sinan",
+    "description1": "Von der Idee zur Umsetzung, vom Konzept zum Exit. In den letzten Jahren habe ich Unternehmen aufgebaut, digitale Produkte entwickelt und Teams durch Transformationen begleitet.",
+    "description2": "Mein Antrieb? Komplexe Probleme einfach machen und Menschen befähigen, Innovation zu leben statt nur darüber zu reden.",
+    "videoLabel": "Meine Geschichte",
+    "tags": {
+      "education": "Harvard & DHBW",
+      "exits": "5+ Exits",
+      "location": "Stuttgart"
+    }
   }
 }

@@ -9,15 +9,15 @@
     "ventures": "Ventures",
     "about": "About",
     "contact": "Contact",
-    "bookSinan": "Book Sinan"
+    "bookSinan": "Talk to Sinan"
   },
   "hero": {
     "tagline": "Innovation & Transformation",
     "headlinePart1": "Shape the",
     "headlineHighlight": "future",
-    "headlinePart2": "– don't wait for it",
+    "headlinePart2": "don't wait for it.",
     "subheadline": "Speaker, Entrepreneur and Advisor. I help companies leverage innovation and AI strategically to master their transformation journey.",
-    "cta": "Book a conversation",
+    "cta": "Book a call",
     "roles": {
       "speaker": "Keynote Speaker",
       "entrepreneur": "Entrepreneur",
@@ -26,46 +26,40 @@
   },
   "speaking": {
     "title": "Speaking",
-    "subtitle": "Keynotes on Innovation, AI, and Digital Transformation",
+    "subtitle": "Provocative insights for teams ready to think differently",
     "topics": {
-      "innovation": {
-        "title": "Innovation by Design",
-        "description": "How to build products people actually use."
+      "mindset": {
+        "title": "The Innovation Mindset",
+        "description": "Why 90% of corporate innovation fails—and how to be part of the 10%. About the psychological barriers that prevent us from creating something truly new.",
+        "takeaway": "\"Innovation isn't a method. It's a decision.\""
       },
-      "ai": {
-        "title": "Applied AI",
-        "description": "Beyond the hype—lessons learned from building routeX and hubli."
+      "aiworkshop": {
+        "title": "AI Without the Bullshit",
+        "description": "Hands-on workshop: What AI can really do today, where it fails, and how to apply it practically. Together we develop use cases for your company.",
+        "takeaway": "\"The question isn't whether AI, but which problem you're solving with it.\""
       },
       "transformation": {
-        "title": "Digital Transformation",
-        "description": "The intersection of UX and Business Logic."
+        "title": "Transformation is Culture Work",
+        "description": "Tools change nothing. People change everything. Why most transformation projects fail due to culture—and how to overcome the invisible resistance.",
+        "takeaway": "\"Digitalization starts in the mind, not in the tool.\""
+      },
+      "aifinale": {
+        "title": "AI: The Finale",
+        "description": "How AI, Robotics and Quantum Computing will change the future—faster than we think. A look at the convergence of technologies and what it means for all of us.",
+        "takeaway": "\"The next 10 years will change everything we know about work.\""
       }
     }
   },
   "ventures": {
     "title": "The Ecosystem",
-    "subtitle": "Companies and products I'm building",
-    "tier1": {
-      "theneed": {
-        "tagline": "Innovation Agency",
-        "description": "Strategy & Growth"
-      },
-      "uxcircle": {
-        "tagline": "Software / Designhouse",
-        "description": "Execution & Craft"
-      }
+    "subtitle": "Two companies, one vision: Making innovation tangible.",
+    "theneed": {
+      "tagline": "Innovation Agency",
+      "description": "We help companies develop and successfully implement their innovation strategy."
     },
-    "tier2": {
-      "hubli": {
-        "tagline": "Real Estate Marketing Automation"
-      },
-      "commissio": {
-        "tagline": "Commission Management Software"
-      },
-      "routex": {
-        "tagline": "AI Route Management",
-        "badge": "Beta"
-      }
+    "uxcircle": {
+      "tagline": "Software & Designhouse",
+      "description": "We build digital products that people love and that drive businesses forward."
     }
   },
   "proof": {
@@ -80,12 +74,32 @@
     "viewAll": "View all videos"
   },
   "footer": {
-    "cta": "Ready to innovate?",
+    "available": "Open for new projects",
+    "cta": "Let's talk",
+    "ctaSubtitle": "Whether keynote, workshop or consulting - I look forward to connecting.",
+    "bookCall": "Book a video call",
+    "sendEmail": "Send an email",
+    "location": "Stuttgart, Germany - Remote first",
+    "createdBy": "Created by",
+    "founder": "FOUNDER of",
     "impressum": "Imprint",
     "datenschutz": "Privacy"
   },
   "common": {
     "learnMore": "Learn more",
     "viewAll": "View all"
+  },
+  "about": {
+    "badge": "About me",
+    "title": "Hey, I'm",
+    "name": "Sinan",
+    "description1": "From idea to execution, from concept to exit. Over the past years, I've built companies, developed digital products, and guided teams through transformations.",
+    "description2": "My drive? Making complex problems simple and empowering people to live innovation instead of just talking about it.",
+    "videoLabel": "My Story",
+    "tags": {
+      "education": "Harvard & DHBW",
+      "exits": "5+ Exits",
+      "location": "Stuttgart"
+    }
   }
 }

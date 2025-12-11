@@ -3,32 +3,32 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
-import { Container, GlassCard, SectionHeader } from "@/components/ui";
+import { Container } from "@/components/ui";
 
 const topics = [
   {
-    key: "innovation",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-      </svg>
-    ),
+    key: "mindset",
+    image: "/images/speaking/mindset.jpg",
+    gradient: "from-violet-500/20 via-purple-500/10 to-transparent",
+    badge: "Keynote",
   },
   {
-    key: "ai",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-      </svg>
-    ),
+    key: "aiworkshop",
+    image: "/images/speaking/ai-workshop.jpg",
+    gradient: "from-emerald-500/20 via-green-500/10 to-transparent",
+    badge: "Workshop",
   },
   {
     key: "transformation",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-      </svg>
-    ),
+    image: "/images/speaking/transformation.jpg",
+    gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
+    badge: "Keynote",
+  },
+  {
+    key: "aifinale",
+    image: "/images/speaking/ai-finale.jpg",
+    gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
+    badge: "Keynote",
   },
 ];
 
@@ -54,113 +54,136 @@ export function Speaking() {
         <Container size="xl">
           {/* Section Header */}
           <motion.div
-            className="mb-16"
+            className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-zinc-500 text-sm mb-6">
-              {t("title")}
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-white mb-4">
-              Keynote <span className="font-instrument italic text-white/60">Topics</span>
-            </h2>
-            <p className="text-zinc-400 text-lg max-w-xl">
-              {t("subtitle")}
-            </p>
-          </motion.div>
-        </Container>
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-zinc-500 text-sm">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                  </svg>
+                  {t("title")}
+                </span>
+              </div>
 
-        {/* Horizontal Scrolling Cards */}
-        <div className="relative">
-          <div className="flex gap-6 px-6 md:px-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
-            {/* Spacer for left padding on larger screens */}
-            <div className="hidden lg:block flex-shrink-0 w-[calc((100vw-1280px)/2)]" />
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-white mb-4">
+                Keynotes & <span className="font-instrument italic text-white/60">Workshops</span>
+              </h2>
+              <p className="text-zinc-400 text-lg max-w-xl">
+                {t("subtitle")}
+              </p>
+            </div>
 
-            {topics.map((topic, index) => (
-              <motion.div
-                key={topic.key}
-                className="flex-shrink-0 w-[340px] md:w-[400px] snap-center"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-3 shrink-0">
+              <motion.a
+                href="https://cal.com/theneedworks/expertengesprach"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-medium text-sm hover:bg-zinc-100 transition-all group"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <GlassCard
-                  className="p-8 h-full min-h-[280px] flex flex-col cursor-pointer group"
-                  hover
-                  glow
-                >
-                  {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl bg-white/[0.05] border border-white/[0.08] flex items-center justify-center text-zinc-400 group-hover:text-white group-hover:bg-white/[0.08] transition-all mb-6">
-                    {topic.icon}
-                  </div>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+                Videocall buchen
+              </motion.a>
+              <motion.a
+                href="mailto:hi@sinanyurttadur.de?subject=Keynote%20%2F%20Workshop%20Anfrage"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-zinc-300 font-medium text-sm hover:bg-white/[0.08] hover:text-white transition-all group"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                Per E-Mail
+              </motion.a>
+            </div>
+          </motion.div>
+          {/* Topic Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {topics.map((topic, index) => (
+            <motion.div
+              key={topic.key}
+              className="group relative"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+            >
+              {/* Card */}
+              <div className="relative h-full rounded-2xl overflow-hidden bg-zinc-900/50 border border-white/[0.06] transition-all duration-500 group-hover:border-white/[0.12]">
+                {/* Image */}
+                <div className="relative h-48 md:h-56 overflow-hidden">
+                  <img
+                    src={topic.image}
+                    alt={t(`topics.${topic.key}.title`)}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => {
+                      // Fallback gradient if image doesn't exist
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
 
+                  {/* Gradient Overlay */}
+                  <div className={`absolute inset-0 bg-gradient-to-t ${topic.gradient}`} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent" />
+
+                  {/* Badge */}
+                  {topic.badge && (
+                    <div className="absolute top-4 right-4">
+                      <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full backdrop-blur-md text-xs font-medium ${
+                        topic.badge === "Workshop"
+                          ? "bg-emerald-500/20 border border-emerald-500/30 text-emerald-300"
+                          : "bg-white/10 border border-white/20 text-white"
+                      }`}>
+                        {topic.badge === "Workshop" ? (
+                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                          </svg>
+                        ) : (
+                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                          </svg>
+                        )}
+                        {topic.badge}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
                   {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-medium text-white mb-3">
+                  <h3 className="text-xl md:text-2xl font-medium text-white mb-3 group-hover:text-white transition-colors">
                     {t(`topics.${topic.key}.title`)}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-zinc-400 leading-relaxed flex-grow">
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                     {t(`topics.${topic.key}.description`)}
                   </p>
 
-                  {/* Arrow indicator */}
-                  <div className="mt-6 flex items-center gap-2 text-zinc-500 group-hover:text-white transition-colors">
-                    <span className="text-sm">Mehr erfahren</span>
-                    <svg
-                      className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </GlassCard>
-              </motion.div>
-            ))}
+                  {/* Takeaway */}
+                  <p className="text-zinc-500 text-xs italic mb-6">
+                    {t(`topics.${topic.key}.takeaway`)}
+                  </p>
 
-            {/* Book a Talk Card */}
-            <motion.div
-              className="flex-shrink-0 w-[340px] md:w-[400px] snap-center"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <a
-                href="https://cal.com/theneedworks/expertengesprach"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block h-full"
-              >
-                <div className="h-full min-h-[280px] rounded-2xl border border-dashed border-white/[0.15] bg-white/[0.02] p-8 flex flex-col items-center justify-center text-center hover:bg-white/[0.04] hover:border-white/[0.25] transition-all group cursor-pointer">
-                  <div className="w-14 h-14 rounded-full bg-white/[0.05] flex items-center justify-center mb-4 group-hover:bg-white/[0.1] transition-all">
-                    <svg className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
                   </div>
-                  <p className="text-zinc-400 group-hover:text-white transition-colors font-medium">
-                    Keynote anfragen
-                  </p>
-                  <p className="text-zinc-600 text-sm mt-1">
-                    Für Ihre Veranstaltung
-                  </p>
-                </div>
-              </a>
+
+                {/* Hover Glow */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              </div>
             </motion.div>
-
-            {/* Spacer for right padding on larger screens */}
-            <div className="hidden lg:block flex-shrink-0 w-[calc((100vw-1280px)/2)]" />
+          ))}
           </div>
-
-          {/* Scroll hint gradient */}
-          <div className="absolute right-0 top-0 bottom-8 w-24 bg-gradient-to-l from-black to-transparent pointer-events-none lg:hidden" />
-        </div>
+        </Container>
       </motion.div>
     </section>
   );

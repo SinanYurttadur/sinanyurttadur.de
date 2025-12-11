@@ -118,23 +118,23 @@ export function Dock() {
           </DockItem>
         </div>
 
-        {/* Divider */}
-        <div className="w-px h-8 bg-white/10 mx-2" />
+        {/* Divider - hidden on mobile */}
+        <div className="hidden md:block w-px h-8 bg-white/10 mx-2" />
 
-        {/* Book CTA */}
+        {/* Book CTA - hidden on mobile */}
         <motion.a
           href="https://cal.com/theneedworks/expertengesprach"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2.5 bg-white/10 hover:bg-white/15 text-white text-sm font-medium rounded-xl transition-colors"
+          className="hidden md:block px-4 py-2.5 bg-white/10 hover:bg-white/15 text-white text-sm font-medium rounded-xl transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           {t("bookSinan")}
         </motion.a>
 
-        {/* Divider */}
-        <div className="w-px h-8 bg-white/10 mx-2" />
+        {/* Divider - hidden on mobile */}
+        <div className="hidden md:block w-px h-8 bg-white/10 mx-2" />
 
         {/* Language Switcher */}
         <Link href="/" locale={otherLocale}>

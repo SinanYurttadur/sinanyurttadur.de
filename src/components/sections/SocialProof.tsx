@@ -110,10 +110,10 @@ const allTestimonials: Testimonial[] = [
 function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; index: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, delay: index * 0.03 }}
       className="h-full"
     >
       <GlassCard className="p-6 h-full flex flex-col" hover>
@@ -291,8 +291,9 @@ export function SocialProof() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 min-h-[400px]"
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
+          onTouchStart={() => setIsAutoPlaying(false)}
         >
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait">
             {currentTestimonials.map((testimonial, index) => (
               <TestimonialCard
                 key={`${currentPage}-${testimonial.name}`}

@@ -89,6 +89,22 @@
     "learnMore": "Mehr erfahren",
     "viewAll": "Alle ansehen"
   },
+  "booking": {
+    "badge": "Buchung",
+    "title": "Bühne &",
+    "titleHighlight": "Podcast",
+    "subtitle": "Für Konferenzen, Events, Podcasts und Interviews – ich freue mich auf Ihre Anfrage.",
+    "speaker": {
+      "title": "Keynote & Speaker",
+      "description": "Inspirierende Vorträge für Konferenzen, Firmenevents und Fachveranstaltungen. Provokante Impulse, die zum Nachdenken anregen und echte Veränderung anstoßen.",
+      "cta": "Keynote anfragen"
+    },
+    "podcast": {
+      "title": "Podcast & Interview",
+      "description": "Als Gast in Ihrem Podcast oder für Interviews, Panels und Diskussionsrunden. Tiefe Gespräche über Innovation, KI und die Zukunft der Arbeit.",
+      "cta": "Als Gast einladen"
+    }
+  },
   "about": {
     "badge": "Über mich",
     "title": "Hey, ich bin",

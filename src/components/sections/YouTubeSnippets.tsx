@@ -9,6 +9,9 @@ const featuredVideos = [
   { id: "z6iSCaXFHMc" },
   { id: "zbN-sEMgWtw" },
   { id: "eMj3vJtfL4c" },
+  { id: "cZQpdRiPbnU" },
+  { id: "llmCnYQG4XM" },
+  { id: "FWXow7vEN4c" },
 ];
 
 const CHANNEL_URL = "https://www.youtube.com/@sinanyurttadur";

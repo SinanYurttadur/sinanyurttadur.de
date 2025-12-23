@@ -89,6 +89,22 @@
     "learnMore": "Learn more",
     "viewAll": "View all"
   },
+  "booking": {
+    "badge": "Booking",
+    "title": "Stage &",
+    "titleHighlight": "Podcast",
+    "subtitle": "For conferences, events, podcasts and interviews – I look forward to your inquiry.",
+    "speaker": {
+      "title": "Keynote & Speaker",
+      "description": "Inspiring talks for conferences, corporate events and industry gatherings. Provocative insights that spark thinking and drive real change.",
+      "cta": "Request keynote"
+    },
+    "podcast": {
+      "title": "Podcast & Interview",
+      "description": "As a guest on your podcast or for interviews, panels and discussions. Deep conversations about innovation, AI and the future of work.",
+      "cta": "Invite as guest"
+    }
+  },
   "about": {
     "badge": "About me",
     "title": "Hey, I'm",
